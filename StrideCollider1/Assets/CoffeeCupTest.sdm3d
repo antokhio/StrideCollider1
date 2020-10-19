@@ -1,0 +1,19 @@
+!Model
+Id: ef1c6460-153b-4bd4-8da6-fe840f398cc3
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../Resources/CoffeeCupTest.fbx
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    86ffa28ce3082517d86717759423f7f9:
+        Name: Material_1
+        MaterialInstance:
+            Material: null
+    49781bcf313abd60ee3393a958f10d99:
+        Name: Material_2
+        MaterialInstance:
+            Material: null
+Modifiers: {}
+~SourceHashes:
+    9c1ed04ed44004765a6f7212c5c1a94b~../Resources/CoffeeCupTest.fbx: 70bd3dde6f26fe928e538af3bcdf09a6

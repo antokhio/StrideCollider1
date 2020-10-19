@@ -1,0 +1,67 @@
+!SceneAsset
+Id: d142a203-ac3a-47be-a783-d37717fb2080
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Parent: 531bda3e-c87b-45cf-8007-7947d167fec1:MainScene
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! 4ab1cab5-3c56-45f1-b4ed-5591c014e836
+        - ref!! 73097180-a815-4c23-810d-337b10915d6f
+    Parts:
+        -   Entity:
+                Id: 4ab1cab5-3c56-45f1-b4ed-5591c014e836
+                Name: CoffeeCupTest
+                Components:
+                    09a122686cd4e36b0914599b284fde5a: !TransformComponent
+                        Id: 74c0616b-d2d1-4090-878c-9b6b2ae4e27c
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9b7e08051e418becf257278563ab5aab: !ModelComponent
+                        Id: 4c24cd1f-2fe2-412c-b004-3e80c3b66494
+                        Model: ef1c6460-153b-4bd4-8da6-fe840f398cc3:CoffeeCupTest
+                        Materials: {}
+                    1471d5100d9aa93ac4e717af725b1518: !StaticColliderComponent
+                        Id: 965ad6f4-702c-4b55-a59e-8c08a3d217e9
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            1017c10aca76c15c3d0a349f8e4cccdf: !ColliderShapeAssetDesc
+                                Shape: 48b9133b-a465-416d-a204-53a3a2fb5c90:ColliderHull
+        -   Folder: null
+            Entity:
+                Id: 73097180-a815-4c23-810d-337b10915d6f
+                Name: CoffeeCupTest
+                Components:
+                    09a122686cd4e36b0914599b284fde5a: !TransformComponent
+                        Id: 5aac3b18-f9f0-45e0-b071-e21d4349bcdb
+                        Position: {X: 13.8879557, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9b7e08051e418becf257278563ab5aab: !ModelComponent
+                        Id: 849003ba-d7f1-4b0a-ac6e-1a0c544c6c54
+                        Model: ef1c6460-153b-4bd4-8da6-fe840f398cc3:CoffeeCupTest
+                        Materials: {}
+                    1471d5100d9aa93ac4e717af725b1518: !StaticColliderComponent
+                        Id: 8a20f55e-e06a-4535-90ed-e52773ac31a1
+                        CanSleep: false
+                        Restitution: 0.0
+                        Friction: 0.5
+                        RollingFriction: 0.0
+                        CcdMotionThreshold: 0.0
+                        CcdSweptSphereRadius: 0.0
+                        IsTrigger: false
+                        AlwaysUpdateNaviMeshCache: false
+                        ColliderShapes:
+                            1017c10aca76c15c3d0a349f8e4cccdf: !ColliderShapeAssetDesc
+                                Shape: 48b9133b-a465-416d-a204-53a3a2fb5c90:ColliderHull

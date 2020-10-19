@@ -1,0 +1,79 @@
+!SceneAsset
+Id: 531bda3e-c87b-45cf-8007-7947d167fec1
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds:
+    - d142a203-ac3a-47be-a783-d37717fb2080
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! 2a2f096e-64cc-4cdc-8501-ddb56739f7b7
+        - ref!! f92ff405-1b1a-4134-b775-d5fc831499ef
+        - ref!! bf1bc10f-c71b-454b-9792-f10a7fd26f92
+    Parts:
+        -   Entity:
+                Id: 2a2f096e-64cc-4cdc-8501-ddb56739f7b7
+                Name: Camera
+                Components:
+                    93bd7666712cec42ebf97e849f6a52d5: !TransformComponent
+                        Id: 5ec2aa1a-e108-420b-8005-a5157010dc4a
+                        Position: {X: 2.6, Y: 0.6, Z: -1.0}
+                        Rotation: {X: 0.0, Y: 0.829037547, Z: 0.0, W: 0.5591929}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    7fa4adc2a4b76ab7addcec81831ba222: !CameraComponent
+                        Id: a1cd5a7e-65c7-4e41-82f0-3fed9e6a6289
+                        Name: null
+                        Projection: Perspective
+                        Slot: 0dd218bd-7280-48e0-86b4-dcd48ce29b3c
+                    19dbde20a220853863f5b8bd60b34e50: !StrideCollider1.BasicCameraController,StrideCollider1
+                        Id: 0fbc78a9-067d-44cc-be6d-3f136531a0d0
+                        Gamepad: false
+                        KeyboardMovementSpeed: {X: 5.0, Y: 5.0, Z: 5.0}
+                        TouchMovementSpeed: {X: 0.7, Y: 0.7, Z: 0.3}
+                        SpeedFactor: 5.0
+                        KeyboardRotationSpeed: {X: 3.0, Y: 3.0}
+                        MouseRotationSpeed: {X: 1.0, Y: 1.0}
+                        TouchRotationSpeed: {X: 1.0, Y: 0.7}
+        -   Entity:
+                Id: bf1bc10f-c71b-454b-9792-f10a7fd26f92
+                Name: Skybox
+                Components:
+                    dbe818483ae76ac4011eb4bbb95b798c: !TransformComponent
+                        Id: 51fc1c5b-1794-4cb6-80c7-1a9ba752ae86
+                        Position: {X: 0.0, Y: 2.0, Z: -2.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    7cca4b24b3e50f68fb0f2906e2a55c07: !BackgroundComponent
+                        Id: 5536706f-c803-4551-980d-6e605120f28e
+                        Texture: f0059d54-14b5-4ac8-8b07-ec178786b689:Skybox texture
+                    882cb191fe6e9c913eb9ef34ad7e9d77: !LightComponent
+                        Id: 0bb55353-8540-4ff3-b02a-33862c8638d6
+                        Type: !LightSkybox
+                            Skybox: 752674ec-e139-46da-a2c5-44acfa52bb66:Skybox
+        -   Entity:
+                Id: f92ff405-1b1a-4134-b775-d5fc831499ef
+                Name: Directional light
+                Components:
+                    414a0b30c970288eb0506c707d021588: !TransformComponent
+                        Id: 230beebc-94b9-40b4-93a0-e7897bd67717
+                        Position: {X: 0.0, Y: 2.0, Z: 0.0}
+                        Rotation: {X: 1.131334E-08, Y: -0.9659258, Z: -0.258819044, W: -4.222196E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    3bc40d25f3d98e8b463e3a2f3df46b16: !LightComponent
+                        Id: ce113b5a-9dd6-4317-b734-5415e6678764
+                        Type: !LightDirectional
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Shadow:
+                                Enabled: true
+                                Filter: !LightShadowMapFilterTypePcf
+                                    FilterSize: Filter5x5
+                                Size: Large
+                                DepthRange: {}
+                                PartitionMode: !LightDirectionalShadowMap.PartitionLogarithmic {}
+                                ComputeTransmittance: false
+                                BiasParameters: {}
+                        Intensity: 20.0

@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="MzogofuPWvFN00yzd00UJy" LanguageVersion="2020.3.0.43" Version="0.128">
+  <NugetDependency Id="KMFFcyZ5qvzM3UclVVzJ4y" Location="VL.CoreLib" Version="2020.3.0-0043-g2cdd73bab2" />
+  <Patch Id="De6V4BovwZMO1gBVRQCdfk">
+    <Canvas Id="PzXEwsOfjV8Mw6hHifQmUh" DefaultCategory="Main" CanvasType="FullCategory">
+      <!--
+
+    ************************ Simulation ************************
+
+-->
+      <Node Name="Simulation" Bounds="559,340,100,50" Id="FMNZU1ntt8dLXMxUl4Wqbh">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" Name="Operation" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+        <Patch Id="TEApgtWAUf6Nn7yHzDPF31">
+          <Node Bounds="559,340,10,10" AutoConnect="true" Id="Fvaz5NEHPotNZ7ZI44W917">
+            <p:NodeReference LastCategoryFullName="Stride.Physics.PhysicsProcessor" LastSymbolSource="Stride.Physics.dll">
+              <Choice Kind="OperationNode" Name="Simulation" />
+              <FullNameCategoryReference ID="Stride.Physics.PhysicsProcessor" />
+            </p:NodeReference>
+            <Pin Id="Aluf8hPy0oOM8b22xqOa6k" Name="Input" Kind="StateInputPin" />
+            <Pin Id="I7IYR3sRPagPBNHWt8szVx" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="OmVUYVXh9jSPbfw8w0YG87" Name="Simulation" Kind="OutputPin" />
+          </Node>
+          <Pin Id="LDEG24TdESNOjcHUoBQfqm" Name="Input" Kind="InputPin" />
+          <Pin Id="AJmHuIG8fiWMmkte4U8ZDX" Name="Output" Kind="OutputPin" />
+          <Pin Id="F7TyTPYWs9kLXpOXmXI3Wo" Name="Simulation" Kind="OutputPin" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ Raycast ************************
+
+-->
+      <Node Name="Raycast" Bounds="715,312,112,80" Id="IQXa4xusS4PPuYCD1OKeTq">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" Name="Operation" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+        <Patch Id="NJXDVz7yxYvM1fOpp64wCh">
+          <Node Bounds="727,341,85,26" AutoConnect="true" Id="V685Dk1GzwBP6l0hLS5xln">
+            <p:NodeReference LastCategoryFullName="Stride.Physics.Simulation" LastSymbolSource="Stride.Physics.dll">
+              <Choice Kind="OperationNode" Name="Raycast" />
+              <FullNameCategoryReference ID="Stride.Physics.Simulation" />
+            </p:NodeReference>
+            <Pin Id="VxzlHlshqJTLYNtBzl8gyK" Name="Input" Kind="StateInputPin" />
+            <Pin Id="PvkcQtRuegKPaf3bQWwnV5" Name="From" Kind="InputPin" />
+            <Pin Id="Tkhaa3c2PN3N86OAoUZtEk" Name="To" Kind="InputPin" />
+            <Pin Id="BRjR6JnRYZYM7tMAMfH26o" Name="Filter Group" Kind="InputPin" />
+            <Pin Id="S5HhmlIbAJOOCu9lheuvl1" Name="Filter Flags" Kind="InputPin" />
+            <Pin Id="BDA4sVxhKPbOqIddSfsGiT" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="Dyog1oBDBtjO3dZm39CZ4w" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pin Id="NzaGABsbY2KNkIHmGNwHSE" Name="Input" Kind="InputPin" />
+          <Pin Id="UrTJ74lWtn8PDlSawshJ34" Name="From" Kind="InputPin" />
+          <Pin Id="UeI8gikkio2QIlu4f1493e" Name="To" Kind="InputPin" />
+          <Pin Id="LsRUCAFMH0hNkoC1SjQQFb" Name="Filter Group" Kind="InputPin" />
+          <Pin Id="CmFyFjCoq9aMAHz66iMyHr" Name="Filter Flags" Kind="InputPin" />
+          <Pin Id="Okb5eK25LTkL0DXlZ8JylZ" Name="Output" Kind="OutputPin" />
+          <Pin Id="Bdk8Ks1GgLFLHix2IymKql" Name="Result" Kind="OutputPin" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ Collider ************************
+
+-->
+      <Node Name="Collider" Bounds="777,527,114,80" Id="PnhjX4i6cynLJsrurbvjfO">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" Name="Operation" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+        <Patch Id="LvG7aDDfw4bNJ4joIRMz08">
+          <Node Bounds="791,556,52,26" AutoConnect="true" Id="UKH0HWuVUTmMLqhay9Ae0R">
+            <p:NodeReference LastCategoryFullName="Stride.Physics.HitResult" LastSymbolSource="Stride.Physics.dll">
+              <Choice Kind="OperationNode" Name="Collider" />
+              <FullNameCategoryReference ID="Stride.Physics.HitResult" />
+            </p:NodeReference>
+            <Pin Id="OpUalutDtmvN56HpI4jPDv" Name="Input" Kind="StateInputPin" />
+            <Pin Id="TI9JQv9A7o7PEbQSxxVvKc" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="CwrGxs2t9rvOXlg0ZdvoQx" Name="Collider" Kind="OutputPin" />
+          </Node>
+          <Pin Id="QrdlCD3qcQ6NC4zpAi1DIm" Name="Input" Kind="InputPin" />
+          <Pin Id="KnBrpMudJ9gPgQ3XnhYhd5" Name="Output" Kind="OutputPin" />
+          <Pin Id="BoxQDqqO6fsMxgubhAz3CL" Name="Collider" Kind="OutputPin" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ Point ************************
+
+-->
+      <Node Name="Point" Bounds="784,669,116,80" Id="A0EIKWSGWViMiolUWfn2GG">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" Name="Operation" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+        <Patch Id="IenXnO7pQ6XO1s9q1qODEl">
+          <Node Bounds="800,697,49,26" AutoConnect="true" Id="BlPp6A0ReMuOKome5YNIMV">
+            <p:NodeReference LastCategoryFullName="Stride.Physics.HitResult" LastSymbolSource="Stride.Physics.dll">
+              <Choice Kind="OperationNode" Name="Point" />
+              <FullNameCategoryReference ID="Stride.Physics.HitResult" />
+            </p:NodeReference>
+            <Pin Id="DBWhvilaPbBLugy0M4TVfX" Name="Input" Kind="StateInputPin" />
+            <Pin Id="SghEVt5VQasMp4vvVg1x0F" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="DbQ7bwwyMvNOYbYG9KqrSW" Name="Point" Kind="OutputPin" />
+          </Node>
+          <Pin Id="LXLSVH2G3L1NY38bv167xs" Name="Input" Kind="InputPin" />
+          <Pin Id="DgNZfZ350oAO4qcgl3g44L" Name="Output" Kind="OutputPin" />
+          <Pin Id="EYKOkw5fptpO4vW6n8AIKP" Name="Point" Kind="OutputPin" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ RaycastSimple ************************
+
+-->
+      <Node Name="RaycastSimple" Bounds="896,351,100,50" Id="LCC4BPZstY1OnGZhVDx0Sl">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" Name="Operation" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+        <Patch Id="UVdyRUAOJLqN2xu9hyPRc3">
+          <Node Bounds="896,351,10,10" AutoConnect="true" Id="QNnV70SrfuePoZzEf7zbHh">
+            <p:NodeReference LastCategoryFullName="Stride.Physics.Simulation" LastSymbolSource="Stride.Physics.dll">
+              <Choice Kind="OperationNode" Name="Raycast" />
+              <FullNameCategoryReference ID="Stride.Physics.Simulation" />
+              <PinReference Kind="InputPin" Name="this">
+                <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="Stride.Physics" LastSymbolSource="Stride.Physics.dll">
+                  <Choice Kind="TypeFlag" Name="Simulation" />
+                </p:DataTypeReference>
+              </PinReference>
+              <PinReference Kind="InputPin" Name="From">
+                <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="Stride.Core.Mathematics" LastSymbolSource="Stride.Core.Mathematics.dll">
+                  <Choice Kind="TypeFlag" Name="Vector3" />
+                </p:DataTypeReference>
+              </PinReference>
+              <PinReference Kind="InputPin" Name="To">
+                <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="Stride.Core.Mathematics" LastSymbolSource="Stride.Core.Mathematics.dll">
+                  <Choice Kind="TypeFlag" Name="Vector3" />
+                </p:DataTypeReference>
+              </PinReference>
+              <PinReference Kind="InputPin" Name="Filter Group">
+                <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="Stride.Physics" LastSymbolSource="Stride.Physics.dll">
+                  <Choice Kind="TypeFlag" Name="CollisionFilterGroups" />
+                </p:DataTypeReference>
+              </PinReference>
+              <PinReference Kind="InputPin" Name="Filter Flags">
+                <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="Stride.Physics" LastSymbolSource="Stride.Physics.dll">
+                  <Choice Kind="TypeFlag" Name="CollisionFilterGroupFlags" />
+                </p:DataTypeReference>
+              </PinReference>
+              <PinReference Kind="OutputPin" Name="this">
+                <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="Stride.Physics" LastSymbolSource="Stride.Physics.dll">
+                  <Choice Kind="TypeFlag" Name="Simulation" />
+                </p:DataTypeReference>
+              </PinReference>
+              <PinReference Kind="OutputPin" Name="return">
+                <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="System" LastSymbolSource="mscorlib.dll">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:DataTypeReference>
+              </PinReference>
+            </p:NodeReference>
+            <Pin Id="Ii6khl4OACdP4ijU54Sx5M" Name="Input" Kind="StateInputPin" />
+            <Pin Id="I4jjnxYlQKfPqJP0L0yF2o" Name="From" Kind="InputPin" />
+            <Pin Id="AyzaOFLKfjZNQ0VC1Im1Yh" Name="To" Kind="InputPin" />
+            <Pin Id="F4Xy2KENF6VO3Q18eu9KGJ" Name="Filter Group" Kind="InputPin" />
+            <Pin Id="FqM55OOY8VlLDV0AEHZ0iD" Name="Filter Flags" Kind="InputPin" />
+            <Pin Id="PfdDaubmc16LJ1VQjBxsrQ" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="O7K96LPttBtM2ldhZK1aiJ" Name="Result (return)" Kind="OutputPin" />
+            <Pin Id="EkINHYWXk08QPSh3pOPlsa" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pin Id="J5WOeQx8hZHNoRUlCVBazA" Name="Input" Kind="InputPin" />
+          <Pin Id="QpMfXI6ccosOKM3CSOq78I" Name="From" Kind="InputPin" />
+          <Pin Id="TWFMhSi3BYPLyoNYyWUXRW" Name="To" Kind="InputPin" />
+          <Pin Id="HGF6I6pfRsELnHaWAwazpI" Name="Filter Group" Kind="InputPin" />
+          <Pin Id="BzpvWtkFjBCOSOkxcP7PXc" Name="Filter Flags" Kind="InputPin" />
+          <Pin Id="TAmzs66uRrvQZ8IuhSV6LZ" Name="Output" Kind="OutputPin" />
+          <Pin Id="RflVVtmjgWKLYs0lajnKxp" Name="Result (return)" Kind="OutputPin" />
+          <Pin Id="K1DehHCfWrEMRoRiThqoYQ" Name="Result" Kind="OutputPin" />
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="KR5nnfQCivHNcY5rPhXmAL">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="NUuxcymsmenP5vpaem0PbL">
+        <Canvas Id="NDuqZvAAZSoMdnV7HFDpwv" CanvasType="Group" />
+        <Patch Id="QTUsrMcWk7kMZeKUxgbLRR" Name="Create" />
+        <Patch Id="HMOzxyg0Pl3OwJxJjD3iR3" Name="Update" />
+        <!--
+
+    ************************  ************************
+
+-->
+        <ProcessDefinition Id="GYO5dGxdhryNmuIAlXbIkP">
+          <Fragment Id="TIlMghFWGK8OgnpDvNOtvQ" Patch="QTUsrMcWk7kMZeKUxgbLRR" Enabled="true" />
+          <Fragment Id="DW7aPnSTcelLlLudm5arcL" Patch="HMOzxyg0Pl3OwJxJjD3iR3" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="THl1RhmoklIOJTR2nVt1nQ" Location="VL.Stride" Version="0.8.12-g88f31c4e46" />
+  <PlatformDependency Id="JoyPGgJqBpdOsSdyKGrCJC" Location="../../../../../../Program Files/vvvv/vvvv_gamma_2020.3.0-0043-g2cdd73bab2/lib/Stride.Physics.dll" />
+</Document>
